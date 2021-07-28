@@ -2,7 +2,7 @@
 this function plots a plotly based sorted marimekko chart from a data frame. 
 
 it needs: 
-    - a dataframe (df),
+- a dataframe (df),
     - the name of the name of the horizonal width data column (width_var), 
     - the name of the width label column (width_label_var), 
     - the name of the column containing the vertical grouping (share_var), 
