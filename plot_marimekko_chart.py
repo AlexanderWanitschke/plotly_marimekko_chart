@@ -26,7 +26,7 @@ def plot_marimekko_chart(df, width_var, width_label_var, share_var, sort_categor
     my_data["Anteil"] = -my_data[width_var] / my_data.groupby(width_label_var)[width_var].transform('sum')
     
     # mark elektro as only positive
-    my_data.loc[my_data.Kraftstoffart == sort_category, "Anteil"] = my_data.Anteil * -1    
+    my_data.loc[my_data[share_var] == sort_category, "Anteil"] = my_data.Anteil * -1    
 
     #make wide table from query dataframe
     data_wide = (
